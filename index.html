@@ -13,39 +13,76 @@
          <div id="inputArea">
             <input type="text" id="calculatorInput" readonly placeholder="0" />
          </div>
-         <div id="calculationArea"></div>
+         <div id="calculationArea">
+            <ul>
+               <li class="buttonsBlock buttonsFlex">
+                  <button class="numberButton" onclick="appendToDisplay('7')">
+                     7</button
+                  ><button class="numberButton" onclick="appendToDisplay('8')">
+                     8
+                  </button>
+                  <button class="numberButton" onclick="appendToDisplay('9')">
+                     9
+                  </button>
+                  <button class="symbolsButton" onclick="appendToDisplay('+')">
+                     +
+                  </button>
+               </li>
+               <li class="buttonsBlock buttonsFlex">
+                  <button class="numberButton" onclick="appendToDisplay('4')">
+                     4
+                  </button>
+                  <button class="numberButton" onclick="appendToDisplay('5')">
+                     5
+                  </button>
+                  <button class="numberButton" onclick="appendToDisplay('6')">
+                     6
+                  </button>
+                  <button class="symbolsButton" onclick="appendToDisplay('-')">
+                     -
+                  </button>
+               </li>
+               <li class="buttonsBlock buttonsFlex">
+                  <button class="numberButton" onclick="appendToDisplay('1')">
+                     1
+                  </button>
+                  <button class="numberButton" onclick="appendToDisplay('2')">
+                     2
+                  </button>
+                  <button class="numberButton" onclick="appendToDisplay('3')">
+                     3
+                  </button>
+                  <button class="symbolsButton" onclick="appendToDisplay('*')">
+                     x
+                  </button>
+               </li>
+
+               <li class="buttonsBlock buttonsFlex">
+                  <button class="symbolsButton" onclick="appendToDisplay('.')">
+                     .
+                  </button>
+                  <button class="numberButton" onclick="appendToDisplay('0')">
+                     0
+                  </button>
+                  <button class="symbolsButton" onclick="appendToDisplay('%')">
+                     %
+                  </button>
+
+                  <button class="symbolsButton" onclick="appendToDisplay('/')">
+                     /
+                  </button>
+               </li>
+               <li class="buttonsBlock buttonsFlex">
+                  <button class="allClearButton" onclick="allClear()">
+                     AC
+                  </button>
+                  <button class="equalsButton" onclick="calculate()">=</button>
+                  <button class="singleClearButton" onclick="clearDisplay()">
+                     DEL
+                  </button>
+               </li>
+            </ul>
+         </div>
       </main>
    </body>
 </html>
-
-<!-- 
-calculator app<ul>
-   <li>
-      <button onclick="appendToDisplay('7')">7</button
-      ><button onclick="appendToDisplay('8')">8</button>
-      <button onclick="appendToDisplay('9')">9</button
-      ><button onclick="allClear()">AC</button>
-      <button onclick="calculate()">=</button>
-   </li>
-   <li>
-      <button onclick="appendToDisplay('4')">4</button>
-      <button onclick="appendToDisplay('5')">5</button>
-      <button onclick="appendToDisplay('6')">6</button>
-      <button onclick="appendToDisplay('*')">x</button>
-      <button onclick="appendToDisplay('/')">/</button>
-   </li>
-   <li>
-      <button onclick="appendToDisplay('1')">1</button>
-      <button onclick="appendToDisplay('2')">2</button>
-
-      <button onclick="appendToDisplay('3')">3</button>
-      <button onclick="appendToDisplay('-')">-</button>
-      <button onclick="appendToDisplay('+')">+</button>
-   </li>
-   <li>
-      <button onclick="appendToDisplay('.')">.</button>
-      <button onclick="appendToDisplay('0')">0</button>
-      <button onclick="clearDisplay()">DEL</button>
-      <button onclick="appendToDisplay('%')">%</button>
-   </li>
-</ul> -->

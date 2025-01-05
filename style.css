@@ -13,7 +13,7 @@ body {
 #calculatorApplication {
    background-color: rgb(189, 179, 179);
    padding: 30px 10px;
-   width: 50%;
+   width: 20%;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -27,7 +27,7 @@ body {
    width: 100%;
 }
 #calculatorInput {
-   height: 2.5rem;
+   height: 2.2rem;
    font-size: 1rem;
    padding-right: 10px;
    text-align: right;
@@ -35,7 +35,7 @@ body {
    outline: none;
    padding: 10px;
    width: 100%;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
    border-radius: 10px;
    box-shadow: 10px 2px 10px rgb(180, 178, 178);
    background-color: hsla(196, 13%, 78%, 0.808);
@@ -61,5 +61,50 @@ body {
 }
 h1 {
    padding: 10px;
-   text-shadow: 0px 3px 5px rgb(210, 221, 235);
+   text-shadow: 0px 3px 5px rgb(213, 217, 223);
+}
+#calculationArea ul {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+.buttonsBlock {
+   list-style-type: none;
+   width: 100%;
+}
+.buttonsBlock button {
+   padding: 10px;
+   width: 25%;
+}
+.buttonsFlex {
+   display: flex;
+   width: 90%;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-top: 10px;
+}
+button {
+   border-radius: 15px;
+   border: 1px solid rgb(117, 173, 120);
+   font-weight: bolder;
+   font-size: 15px;
+}
+button:hover {
+   cursor: pointer;
+   background-color: #b3b0b0;
+   color: rgb(255, 255, 255);
+}
+.symbolsButton {
+   background-color: hsla(44, 52%, 70%, 0.699);
+}
+.allClearButton {
+   background-color: #c24b4b;
+}
+.equalsButton {
+   background-color: #41c462;
+}
+.singleClearButton {
+   background-color: hsl(66, 73%, 71%);
 }
